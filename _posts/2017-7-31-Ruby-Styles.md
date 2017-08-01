@@ -3,7 +3,7 @@ layout: post
 title: Ruby Coding Styles Rules dựa vào kinh nghiệm thực tế
 ---
 
-Trong những coding convention định nghĩa ở https://github.com/bbatsov/ruby-style-guide thì có những quy tắc rất hay gặp trong thực tế
+Trong những coding convention định nghĩa ở [https://github.com/bbatsov/ruby-style-guide](https://github.com/bbatsov/ruby-style-guide) thì có những quy tắc rất hay gặp trong thực tế
 
 - Sử dụng những syntax của Ruby thay vì dùng những syntax kiểu C, hoặc Javascript
 VD:
@@ -37,7 +37,7 @@ ary.each { |e|
 ```
 - Dùng {...} cho block oneliner nếu có thể oneline
 
-Good: `ary.map{|e| e.attr}`
+Good:   `ary.map{|e| e.attr}`
 
 - DRY, code trùng có thể chuyển vào block hoặc method mới dùng chung
 
@@ -133,4 +133,4 @@ end
 `obj.try(:method)`
 
 
-Đây đều là những kinh nghiệm chủ quan của cá nhân, có thể tham khảo thêm tại https://github.com/bbatsov/ruby-style-guide
+Đây đều là những kinh nghiệm chủ quan của cá nhân, có thể tham khảo thêm tại [https://github.com/bbatsov/ruby-style-guide](https://github.com/bbatsov/ruby-style-guide)
