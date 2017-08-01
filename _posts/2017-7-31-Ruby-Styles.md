@@ -8,17 +8,22 @@ Trong những coding convention định nghĩa ở [https://github.com/bbatsov/r
 - Sử dụng những syntax của Ruby thay vì dùng những syntax kiểu C, hoặc Javascript
 
 VD:
-String interpolation 
+String interpolation
+
 Good: `str = "Aloha!, {a}"`
+
 Bad: `str = "Aloha!, " + a`
 
 Array
+
 Good: `a = %w(a b c)`
+
 Not Good: `a = ['a', 'b', 'c']`
 
 - Dùng single quote thay vì double quotes
 
 Good: `a = 'string'`
+
 Bad: `a = "string"`
 
 - Dùng `do...end` thay vì {...}
@@ -110,6 +115,7 @@ Bad: `unless a.nil?` hoặc `if !a.nil?`
 - Hash thì dùng cú pháp mới từ Ruby ver1.9
 
 Good: `hash = {a: 1, b: 3}`
+
 Bad: `hash = {a => 1, b => 3}`
 
 - Không cần dùng return trả về ở cuối method 
