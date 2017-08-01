@@ -152,11 +152,16 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-color: $ocean;
+  background: -webkit-linear-gradient(left top, #32465F, #2D3937); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #32465F, #2D3937); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #32465F, #2D3937);  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #32465F, #2D3937);  /* Standard syntax */
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  // border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -198,11 +203,14 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  a {
+    color: white;
+  }
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $gray2;
   font-size: 16px;
 
   @include mobile {
@@ -225,7 +233,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -272,15 +280,22 @@ nav {
 }
 
 .wrapper-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $ocean;
+  background: -webkit-linear-gradient(left top, #32465F, #2D3937); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #32465F, #2D3937); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #32465F, #2D3937);  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #32465F, #2D3937);  /* Standard syntax */
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+  // border-top: 1px solid #ddd;
+  // border-bottom: 1px solid #ddd;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
