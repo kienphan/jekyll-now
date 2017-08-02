@@ -1,3 +1,8 @@
+---
+layout: post
+title: Hello World với Python Flask
+---
+
 ### Flask là cái gì?
 
 Flask là một micro web framework khá nổi tiếng viết bởi Python. Nhanh, nhỏ nhẹ, đơn giản, nếu tập tành viết web application với Python thì Flask là 1 sự lựa chọn thích hợp.
