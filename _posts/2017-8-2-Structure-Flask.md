@@ -3,7 +3,7 @@ layout: post
 title: Cấu trúc project Flask để develop web app dễ dàng hơn
 ---
 
-Bài viết trước đã giới thiệu qua về cách làm tạo 1 ứng dụng Hello World với Flask App [tại đây](https://kienphan.github.io/Hello-Flask/), hôm nay mình sẽ thử cấu trúc lại Flask App để develop Web App dễ dàng và khoa học, trông khác cái bãi rác hơn.
+Bài viết trước đã giới thiệu qua về cách làm tạo 1 ứng dụng Hello World với Flask App [tại đây]({{ site.baseurl }}/Hello-Flask/), hôm nay mình sẽ thử cấu trúc lại Flask App để develop Web App dễ dàng và khoa học, trông khác cái bãi rác hơn.
 
 ![_config.yml]({{ site.baseurl }}/images/flask.png)
 
