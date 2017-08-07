@@ -7,6 +7,8 @@ title: Hello World với Python Flask
 
 Flask là một micro web framework khá nổi tiếng viết bởi Python. Nhanh, nhỏ nhẹ, đơn giản, nếu tập tành viết web application với Python thì Flask là 1 sự lựa chọn thích hợp.
 
+![_config.yml]({{ site.baseurl }}/images/flask.png)
+
 À, mà phải biết chút Python chứ nhỉ? 
 Lên [Codeacademy](https://www.codecademy.com/learn/python) dạo 1 khoá python, hoặc download 1 số ebook về python cơ bản, cảm nhận ban đầu là khá fun.
 Next, bắt tay vào Hello World luôn thôi

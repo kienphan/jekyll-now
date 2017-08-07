@@ -23,9 +23,20 @@
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q87V59"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q87V59"
+    height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1738533949761024";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -46,6 +57,11 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
+      <br><br>
+      <div class="fb-share-button" data-href="https://kienphan.github.io" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share
+        </a>
+      </div>
     </div>
 
     <div class="wrapper-footer">
