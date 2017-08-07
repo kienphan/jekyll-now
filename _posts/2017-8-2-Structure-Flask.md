@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Cấu trúc các thư mục Flask để develop dễ dàng hơn
----
+title: Cấu trúc project Flask để develop web app dễ dàng hơn
+---
 
 Bài viết trước đã giới thiệu qua về cách làm tạo 1 ứng dụng Hello World với Flask App [tại đây](https://kienphan.github.io/Hello-Flask/), hôm nay mình sẽ thử cấu trúc lại Flask App để develop Web App dễ dàng và khoa học, trông khác cái bãi rác hơn.
 
 ![_config.yml]({{ site.baseurl }}/images/flask.png)
 
-Bắt tay vào làm luôn thôi.(Thực hiện trên Mac OS, Ubuntu cũng gần tương tựv)
+Bắt tay vào làm luôn thôi.(Thực hiện trên Mac OS, Ubuntu cũng gần tương tự)
 
 ### Chuẩn bị môi trường
 
 - Kiểm tra lại môi trường (Xem lại [bài viết trước](https://kienphan.github.io/Hello-Flask/))
+
   - `Python3`
   - `pip3`
   - `virtualenv`
+
 Cài `virtualenv` đơn giản bằng `pip`, đây là tool để tạo môi trường Python ảo chạy độc lập và không ảnh hưởng đến hệ thống)
 
 ```bash
@@ -41,7 +43,7 @@ mkdir app/templates
 
 - Cấu trúc thư mục giờ trông sẽ như thế này 
 
-```
+```bash
 ~/flask-starter
   |__/app
      |__/statics
@@ -239,31 +241,11 @@ touch ~/flask-starter/app/templates/layout.html
 
 Layout chứa bộ khung HTML, đảm bảo việc DRY code, giúp maintain dễ dàng hơn:
 
-```bash
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Flask Starter App - Kienphan</title>
-  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-</head>
-
-<body>
-  {% block body %}{% endblock %}
-</body>
-</html>
-```
+![_config.yml]({{ site.baseurl }}/images/flask-layout.png)
 
 - Edit file `hello.html` để có thể sử dụng `layout`:
 
-```bash
-{% extends "layout.html" %}
-{% block body %}
-  <h1>Hello Flask</h1>
-{% endblock %}
-```
+![_config.yml]({{ site.baseurl }}/images/hello-html.png)
 
 - Edit lại `404.html`:
 

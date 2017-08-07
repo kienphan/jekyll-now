@@ -202,18 +202,9 @@ h1 {
 }
 ```
 
-Thế thì cũng phải sửa lại hello.html
+Thế thì cũng phải sửa lại `hello.html`
 
-```html
-<html>
-<head>
-   <link rel="stylesheet" type="text/css" src="{{ url_for('static', filename = 'style.css') }}" ></script>
-</head>
-<body>
-   <h1>Hello, {{ name }} </h1>
-</body>
-</html>
-```
+![_config.yml]({{ site.baseurl }}/images/hello-flask.png)
 
 Reload lại browser thử xem sao, nhưng để không cần phải restart lại application server mỗi khi thay đổi các file `static` và `templates`, thì cần phải thêm `config` ở `run.py`
 
@@ -229,3 +220,5 @@ if __name__ == "__main__":
 - Đúng như với tên gọi mini webframework, `Flask` khá đơn giản, phải config bằng tay khá nhiều lúc ban đầu, cần gì thì cài đặt thêm cái đấy, như `ORM`, hay tự cấu trúc thư mục bằng tay. Nếu đang dev web với framework như `Rails` chuyển sang như là chạy Airblade chuyển qua đi supercub vậy, cần độ nhiều.
 - Python khá fun, cũng đáng bỏ thời gian ra học hỏi chút.
 - Ví dụ trên với Hello World còn khá đơn giản, để phù hợp với ứng dụng lớn hơn cần cấu trúc lại theo module hoặc MVC để dễ dàng phát triển hơn.
+
+Xem tiếp bài viết [Cấu trúc project Flask để develop web app dễ dàng hơn]({{ site.baseurl }}/Structure-Flask)
