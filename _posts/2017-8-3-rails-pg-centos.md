@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Các vấn đề hay gặp khi cài gem 'pg' với Rails trên CentOS
+title: Các vấn đề gặp phải khi lần đầu sử dụng gem 'pg' với Rails trên CentOS
 ---
+
+Trước giờ vẫn hay thao tác chủ yếu với MySQL là chủ yếu, lần đầu cài đặt Rails Project với Postgres đã gặp những vấn để nho nhỏ sau.
 
 Cài project Rails với Postgresql lên CentOS thi thoảng gặp những vấn đề nhất định
 
