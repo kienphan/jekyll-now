@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thử Golang. A Tour of Go (Basics)
+title: Thử Golang xem sao. A Tour of Go (Basics)
 ---
 
 Golang - được Google giới thiệu vào năm 2009, nhưng dạo gần đây được cải thiện để nổi lên như là 1 ngôn ngữ Serverside hàng đầu do có những ưu thế về tốc độ xử lý, hiệu năng tính toán. 
